@@ -1,0 +1,11 @@
+num = int(input("enter an number"))
+if num ==1:
+    print("1 is neither a prime nor a composite number")
+count = 0
+for i in range(2,num):
+    if num%i==0:
+        count += 1
+if count==0:
+    print("prime number")
+else:
+    print("not a prime")
