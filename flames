@@ -1,0 +1,28 @@
+a = input("Enter name1: ")
+b = input("Enter name2: ")
+a1 = list(a.lower())
+b1 = list(b.lower())
+ans=list("FLAMES")
+ins=0
+for i in range(len(a1)):
+    count=0
+    for j in range(len(b1)):
+        if a1[i] == b1[j] and a1[i]:
+            a1[i] = '2'
+            b1[j] = '2'
+c=a1+b1
+for i in c:
+    if i != '2':
+        count =count+ 1
+print(a1)
+print(b1)
+print(count)
+
+ans=list("FLAMES")
+ins=0
+
+while(len(ans)!=1):
+    ins=(ins+(count-1))%len(ans)
+    ans.pop(ins)
+    
+print(ans)
