@@ -1,0 +1,4 @@
+import calendar
+year=2025
+b=calendar.calendar(2025)
+print(b)
