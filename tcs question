@@ -1,5 +1,5 @@
 3 inputs are given: each 4 digit number
-find key = (sum of max of 3 inputs)+(sum of min of 3 inputs)
+find key = (sum of largest of 3 inputs)+(sum of smallest of 3 inputs)
 
 a=int(input("enter number1:"))
 b=int(input("enter number2:"))
