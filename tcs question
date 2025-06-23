@@ -6,7 +6,7 @@ b=int(input("enter number2:"))
 c=int(input("enter number3:"))
 a1=list(map(int,str(a)))
 b1=list(map(int,str(b)))
-c1=list(map(int,str(c)))
+c1=[int (i) for i in str(c)]
 x=max(a1)+max(b1)+max(c1)
 y=min(a1)+min(b1)+min(c1)
 print(x+y)
