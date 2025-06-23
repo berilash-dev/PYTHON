@@ -1,0 +1,12 @@
+3 inputs are given: each 4 digit number
+find key = (sum of max of 3 inputs)+(sum of min of 3 inputs)
+
+a=int(input("enter number1:"))
+b=int(input("enter number2:"))
+c=int(input("enter number3:"))
+a1=list(map(int,str(a)))
+b1=list(map(int,str(b)))
+c1=list(map(int,str(c)))
+x=max(a1)+max(b1)+max(c1)
+y=min(a1)+min(b1)+min(c1)
+print(x+y)
