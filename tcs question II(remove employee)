@@ -1,0 +1,20 @@
+name=["A","B","C","D","E","F","G","H","I","J"]
+memo=[0,1,1,1,2,2,1,2,1,2]
+salary=[1000,2000,3000,4500,2000,5000,1500,2300,1300,1100]
+
+data=list(zip(name,memo,salary))
+remove=[i for i in data if i[2]>4000]
+remain=[i for i in data if i[2]<4000]
+
+remain.sort(key=lambda x:x[2],reverse=True)
+to_remove=[]
+for i in remain:
+    if i[1]>1:
+        to_remove.append(i)
+removed=remove+to_remove
+
+print("The following employees were removed:")
+pos=1
+for i in removed:
+    print("{0}. {1} was removed, his salary was {2} and memo count was:{3}".format(pos,i[0],i[2],i[1]))
+    pos=pos+1
