@@ -1,0 +1,8 @@
+title=["Name","Age","Department"]
+data=[["Ravi",25,"Hr"],
+      ["Anjali",30,"Finance"],
+      ["Sneha",24,"Marketing"]]
+
+print(f"{title[0]:<20}{title[1]:<20}{title[2]:<20}")
+for i in data:
+      print(f"{i[0]:<20}{i[1]:<20}{i[2]:<20}")
