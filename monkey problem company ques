@@ -1,0 +1,12 @@
+x=5
+y=3
+ht=21
+c=0
+co=0
+while(ht!=c):
+    co=co+1
+    if(co%2==0):
+        c=c-y
+    else:
+        c=c+x
+print(co)
