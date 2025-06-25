@@ -1,0 +1,36 @@
+def circle():
+    r=int(input("enter the radius:"))
+    print("area of circle is:",3.14*r*r)
+def square(a):
+    print("the area of square is",a*a)
+def rect():
+    l=int(input("enter the length of rectangle"))
+    b=int(input("enter the breadth of rectangle"))
+    return l*b
+def tria(a,b):
+    return 0.5*a*b
+
+
+while(True):
+    print("1.CIRCLE")
+    print("2.SQUARE")
+    print("3.RECTANGLE")
+    print("4.TRIANGLE")
+    c=int(input("enter the choice: "))
+    match c:
+        case 1: 
+            circle() -#without return and without argument
+        case 2:
+            a = int(input("enter the side"))
+            square(a) - #without return and with argument
+        case 3:
+            res=rect() - #with return and without argument
+            print("the area of rectangle is",res)
+        case 4:
+            a=int(input("enter the height of triangle: "))
+            b=int(input("enter the base of triangle: "))
+            res=tria(a,b)           -#with return with argument
+            print("the area of triangle is",res)
+        case _:
+            break
+            
