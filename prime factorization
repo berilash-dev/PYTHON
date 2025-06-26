@@ -1,6 +1,21 @@
+def prime(n):
+    c=0
+    if n==1:
+        return False
+    for i in range(2,n):
+        if(n%i==0):
+            c=c+1
+    return c==0
+
+c=[]
+for num in range(2, 51):
+    if prime(num):
+        c.append(num)
+        
+
 a=int(input("enter the number: "))
 b=[]
-for i in range(2,a):
+for i in c:
     while(a%i==0):
         a=a//i
         b.append(i)
@@ -10,5 +25,3 @@ for i in range(2,a):
 
 for i in b:
     print(i, end=" * ")
-
-
