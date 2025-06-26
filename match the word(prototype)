@@ -1,0 +1,21 @@
+word=["varsha","manju","derin","kavina","sabatin"]
+c=input("enter the word")
+a=list(c)
+
+
+for k in word:
+    b=list(k)
+    count=0
+    b_temp = b.copy()
+    for i in a:
+        for j in b_temp:
+            if j==i:
+                count=count+1
+                b_temp.remove(j)
+                break
+    if count>=4:
+        break
+print("did you mean? ",k)
+            
+            
+            
