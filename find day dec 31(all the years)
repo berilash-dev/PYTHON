@@ -1,0 +1,27 @@
+def findday(a):
+    b= a%400 
+    c = b//100
+    d = b%100
+    e = d//4
+    f = d-e
+    g = ((c*5) + (e*2) + f)%7
+    match g:
+        case 0:
+            print("sunday")
+        case 1:
+            print("monday")
+        case 2:
+            print("tuesday")
+        case 3:
+            print("wednesday")
+        case 4:
+            print("thursday")
+        case 5:
+            print("friday")
+        case 6:
+            print("saturday")
+
+a=int(input("enter the year: "))
+findday(a)
+
+    
