@@ -1,0 +1,25 @@
+word = ["varsha", "manju", "derin", "kavina", "sabatin"]
+c = input("Enter the word: ").lower()  
+a = list(c)
+
+best_match = None
+max_count = 0
+
+for k in word:
+    b = list(k.lower())  
+    count = 0
+    b_temp = b.copy()
+    
+    for i in a:
+        if i in b_temp:
+            count += 1
+            b_temp.remove(i)
+    
+    if count > max_count:
+        max_count = count
+        best_match = k
+
+if max_count >= 4:
+    print("Did you mean {}???".format(best_match))
+else:
+    print("No close match found.")
