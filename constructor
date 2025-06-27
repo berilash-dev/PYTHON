@@ -1,0 +1,14 @@
+class Person:
+    dept="cse"
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print("Name:",self.name)
+        print("age:",self.age)
+        print("department:",Person.dept)
+
+r=Person("beril",20)
+r1=Person("suba",21)
+r.display()
+r1.display()
