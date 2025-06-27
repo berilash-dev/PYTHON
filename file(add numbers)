@@ -1,0 +1,6 @@
+file=open("message1.txt","r")
+d=file.readlines()
+num1=int(d[0].strip())
+num2=int(d[1].strip())
+result=num1+num2
+print(f"the sum of {num1} and {num2} is {result}")
