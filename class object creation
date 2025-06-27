@@ -1,0 +1,23 @@
+class rec:
+    def set_dim(self,l,b):
+        self.l=l
+        self.b=b 
+    def area(self):
+        return self.l*self.b
+
+l2=[]
+
+n=int(input("enter the no of triangles"))
+for i in range(n):
+    r=rec()
+    l=int(input("enter the length"))
+    b=int(input("enter the breadth"))
+    r.set_dim(l,b)
+    l2.append(r)
+
+pos=1
+for i in l2:
+    print("the area of rectangle{}".format(pos))
+    print("the area is",i.area())
+    pos=pos+1
+    
