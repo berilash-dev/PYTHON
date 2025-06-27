@@ -1,0 +1,6 @@
+a=123
+b=7478
+
+a1= ord("4")-ord("0")
+print(a1)
+print(ord("0"))
