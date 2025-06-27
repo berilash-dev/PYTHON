@@ -4,4 +4,8 @@ file.close()
 print("content written successfully")
 
 file=open("message.txt","r")
-print(file.read())
+d=file.readlines()
+
+for i in d:
+    word=i.split()
+    print(word)
